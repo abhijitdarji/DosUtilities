@@ -1,0 +1,1 @@
+sqlplus username/password@dbname @run.sql
