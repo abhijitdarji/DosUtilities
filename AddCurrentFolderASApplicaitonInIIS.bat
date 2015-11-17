@@ -14,3 +14,6 @@ For %%# in (.) do (
 %windir%\system32\inetsrv\AppCmd add app /site.name:"%siteName%" /path:%url% /physicalPath:%currDir%
 
 ::echo AppCmd add app /site.name:"%siteName%" /path:%url% /physicalPath:%currDir%
+
+::delete application
+::%windir%\system32\inetsrv\AppCmd delete app /app.name: %currDir%%url%
